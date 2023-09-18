@@ -1,7 +1,7 @@
 """
 ท่านสามารถดาวน์โหลดทั้งหมดนี้ แล้วนำไปวางไว้ในโฟล์เดรอ์ของแอพท่านได้เลย เช่น mywebsite/compay แล้ววาง
 และท่านอย่าลืม 'from .sendgmail import *' ไว้บนส่วนหัวของไฟล์ views.py ด้วย
-
+สามารถส่งเป็นข้อความภาษาไทยได้
 """
 from django.core.mail import send_mail
 from mysite.settings import EMAIL_HOST_USER
