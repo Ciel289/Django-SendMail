@@ -23,11 +23,11 @@ EMAIL_HOST_PASSWORD = "รหัสที่คัดลอกไว้" <br>
 from django.core.mail import send_mail <br>
 from mysite.settings import EMAIL_HOST_USER <br>
 def send_email_to(email, subject, message): <br>
-    subject = "test mail"__
-    message = "test send from django" <br>
-    to_email = "" <br>
-    send_mail(subject, message, EMAIL_HOST_USER, to_email, fail_silently=True) <br>
-    print('mail send') <br>
+    *subject = "test mail" <br>
+    *message = "test send from django" <br>
+    *to_email = "" <br>
+    *send_mail(subject, message, EMAIL_HOST_USER, to_email, fail_silently=True) <br>
+    *print('mail send') <br>
 
 จากจะเรียกใช้ใน views.py ให้อิมพอร์ตตัวนี้เข้ามาด้วย <br>
 from .sendgmail import * <br>
