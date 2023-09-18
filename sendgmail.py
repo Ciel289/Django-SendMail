@@ -8,10 +8,9 @@ from mysite.settings import EMAIL_HOST_USER
 
 # ตัวอย่างการใช้งาน send_email_to('ถึงใคร', 'หัวข้อ', 'เนื้อหาภายใน')
 def send_email_to(email, subject, message):
-    # subject = "test mail"
-    # message = "test send from django"
-    to_email = []
-    to_email.append(email)
+    subject = "test mail"
+    message = "test send from django"
+    to_email = ""
     send_mail(subject, message, EMAIL_HOST_USER, to_email, fail_silently=True)
     print('mail send')
 
